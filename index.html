@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bader An">
+        <meta name="description" content="A helpful reviewers page to access guidelines, checklists, and other tools to assist in reviewing papers or manuscripts.">
+        <title>Reviewers</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <style>
+            *{
+                margin: 0; padding: 0; box-sizing: border-box;
+            }
+
+            body{
+                font-family: 'Sora', sans-serif;
+                background-color: #FAFAF9;
+            }
+
+            .container{
+                position: absolute;
+                margin: auto;
+                height: fit-content;
+                width: 565px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                left: 0; top: 0; bottom: 0;
+                margin-left: 100px;
+            }
+        
+            #circle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3rem;
+                width: 3rem;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                background-color: #F5C044;
+            }
+            #star{
+                font-size: 1.3rem;
+                color: gold; /* Fall back color */
+
+                /* Gradient color for font awesome icon */
+                background: linear-gradient(to bottom, white 30%,#fcd37b,#e49d27);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            h1{
+                font-size: 2.25rem;
+            }
+
+            #para {
+                font-size: 1.25rem;
+                color: #52525A;
+                line-height: 2rem;
+                margin: 10px 0 20px 0;
+            }
+
+            input[type="checkbox"] {
+                appearance: none;
+                height: 18px; width: 18px;
+                background-color: #D4D4D8;
+                border-radius: 50%;
+                cursor: pointer;
+                position: relative;
+                margin: 10px 5px;
+                top: 2px;
+            }
+            
+            label {
+                font-size: 0.875rem;
+                color: #52525A;
+                cursor: pointer;
+            }
+
+            input[type=checkbox]:hover {
+                background-color: #a5a5a5;
+            }
+
+            input[type="checkbox"]::after {
+                font-family: 'Font Awesome 5 Free';
+                content: '\f00c';
+                font-weight: 900;
+                color: transparent;
+                font-size: 17px;
+                position: relative;
+                left: 3px;
+            }
+
+            input[type=checkbox]:checked{
+                background-color: #4CA154;
+            }
+
+            input[type=checkbox]:checked::after{
+                color: #FAFAF9;
+            }
+
+            #google-card {
+                width: 420px; height: fit-content;
+                position: absolute;
+                right: 80px; top: 210px;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+            }
+
+            .logo-container {
+                display: flex;
+                justify-content: flex-start;
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .brand-logo {
+                width: 100px; height: auto;
+                margin-right: 15px;
+            }
+
+            .star {
+                width: 24px; height: auto;
+                margin: 0 3px;
+            }
+
+            h2{
+                font-size: 1rem;
+                margin: 20px 0 10px 0;
+            }
+
+            .review{
+                font-size: 1rem;
+                line-height: 1.6rem;
+                color: #52525A;
+                width: 80%;
+            }
+
+            #meta-card {
+                width: 420px; height: fit-content;
+                position: absolute;
+                right: 330px; top: 450px;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div id="circle"><i class="fa-solid fa-star" id="star"></i></div>  
+          <h1>Reviewers</h1>
+          <p id="para">Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.</p>
+          <div class="list-container">
+            <input type="checkbox" id="check1">
+            <label for="check1">Checklist to Review an Academic Paper <span class="checkmark"></span></label>
+            <br>
+            <input type="checkbox" id="check2">
+            <label for="check2">Peer Review Checklist <span class="checkmark"></span></label>
+            <br>
+            <input type="checkbox" id="check3">
+            <label for="check3">Checklist for Editors, Reviewers, and Authors of SPIE Journals <span class="checkmark"></span></label>
+          </div>
+        </div>
+        <section id="google-card">
+            <div class="logo-container">
+                <img class="brand-logo" src="images/google.svg" alt="google logo">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starGray.svg" alt="Gray star">
+            </div>
+            <h2>Samantha Lee</h2>
+            <p class="review">The checklist ensures that the review process is thorough</p>
+        </section>
+        <section id="meta-card">
+            <div class="logo-container">
+                <img class="brand-logo" src="images/meta.svg" alt="meta logo">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+                <img class="star" src="images/starYellow.svg" alt="Yellow star">
+            </div>
+            <h2>Rachel Patel</h2>
+            <p class="review">I highly recommend the Writecream Business Description</p>
+        </section>
+    </body>
+</html>
