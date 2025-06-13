@@ -26,8 +26,8 @@
                 display: flex;
                 justify-content: center;
                 gap: 450px;
-                flex-wrap: wrap;
                 align-items: center;
+                margin: 0 40px;
             }
 
             .container{
@@ -159,6 +159,21 @@
                 line-height: 1.6rem;
                 color: #52525A;
                 width: 80%;
+            }
+
+            @media (max-width: 1200px){
+                .main-layout{
+                    flex-direction: column;
+                    gap: 40px; 
+                    margin: 40px;   
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+
+                .cards-wrapper {
+                    margin-left: 400px;
+                }
+
             }
 
         </style>
