@@ -162,12 +162,15 @@
             }
 
             @media (max-width: 1200px){
-                .main-layout{
+                .main-layout {
                     flex-direction: column;
                     gap: 40px; 
-                    margin: 40px;   
-                    justify-content: flex-start;
+                    margin: 0 40px;   
                     align-items: flex-start;
+                }
+
+                .container {
+                    max-width: max-content; width: 100%;
                 }
 
                 .cards-wrapper {
